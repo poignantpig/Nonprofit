@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/yuh.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -18,7 +18,9 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    
 }
+
 
 .nav-links{
     flex: 1;
@@ -137,4 +139,249 @@ p{
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 33%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* mentors */
+.mentors {
+    background: #131313;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.mentors h1{
+    background-color: #fff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.mentors__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.mentors__card{
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #FF0000 0%, #ffb199 100%);
+
+    transition: 0.3s ease-in;
+}
+
+.mentors__card:nth-child(2){
+    background-image: linear-gradient(to left, #FF0000 0%, #ffb199 100%);
+}
+.mentors__card h2{
+    text-align: center;
+}
+
+.mentors__card p{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.mentors__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.mentors__card button{
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.mentors__card button:hover{
+    cursor:pointer;
+}
+
+.mentors__card:hover{
+    transform:scale(1.075);
+    transition:0.3s ease-in;
+    cursor:pointer;
+}
+
+/*----footer----*/
+
+.footer{
+    width: 100%;
+    text-align:center;
+    padding: 30px 0;
+    background: #131313;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 60;
+    color:#fff
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor:pointer;
+    padding: 18px 0;
+}
+
+/* ------------ about us -------- */
+
+.subheader{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.subheader h1{
+    margin-top: 100px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding:15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #FF0000;
+    background: transparent;
+    color:#FF0000;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+/*------contact us page -------*/
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;  
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color:#FF0000;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+/*------team-----*/
+
+.team{
+    width: 80%;
+    margin: auto;
+}
+.team h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+.team p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.team-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.team-col h3{
+    padding-top: 0;
+    font-size: 25px;
+}
+
+.team-col p{
+    padding:0 0 0;
 }

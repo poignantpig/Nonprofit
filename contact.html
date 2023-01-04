@@ -11,7 +11,7 @@
 
 </head>
 <body>
-<section class = "header">
+<section class = "subheader">
     <nav>
         <a href="index.html"><img src="images/logo.png"></a>
         <div class="nav-links" id ="navLinks">
@@ -25,51 +25,43 @@
        </div>
        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-<div class="text-box">
-    <h1>TogaTutoring</h1>
-    <p>Tutoring students from all over on various STEM subjects</p>
-    <a href = "about.html" class = "abt-btn">About Us</a>
-</div>
+    <h1>Contact Us!</h1>
 </div>
 </section>
-<!----mentors----->
-<section class = "mentors" id = "mentors">
-    <h1>Mentors!</h1>
-    <div class="mentors__wrapper">
-        <div class="mentors__card">
-            <h2>Apply Now!</h2>
-            <p>description</p>
-            <div class="mentors__btn"><button>Yuh</button></div>
-        </div>
-        <div class="mentors__card">
-            <h2>Volunteer Hours!</h2>
-            <p>blahblahblah</p>
-            <div class="mentors__btn"><button>Yuh</button></div>
-        </div>
-    </div>
-</section>
-<!------topics------->
-<section class = "topics">
-    <h1>Topics We Cover</h1>
-    <p>DESCRIPTIONDESCRIPTIONDESCRIPTION</p>
+
+<!------ contact us ------>
+<section class="contact-us">
     <div class="row">
-        <div class="course-col">
-            <h3>Math</h3>
-            <p>yes thats true but like i said it is purely hypotheticall question just like is it better to be succesfull or do what you like more/love
-            </p>
+        <div class="contact-col">
+            <div>
+                <i class = "fa fa-phone"></i>
+                    <span>
+                        <h5>phone</h5>
+                        <p>Leave voicemail if not there</p>
+                    </span>
+                
+                </div>
+                <div>
+                <i class = "fa fa-envelope-o"></i>
+                    <span>
+                        <h5>email</h5>
+                        <p>Email us for any questions, </p>
+                    </span>
+            </div>
         </div>
-        <div class="course-col">
-            <h3>Computer Science</h3>
-            <p>yes thats true but like i said it is purely hypotheticall question just like is it better to be succesfull or do what you like more/love
-            </p>
-        </div>
-        <div class="course-col">
-            <h3>Econ/Finance</h3>
-            <p>yes thats true but like i said it is purely hypotheticall question just like is it better to be succesfull or do what you like more/love
-            </p>
+        <div class="contact-col">
+            <form action="formhandler.php" method = "post">
+                <input type="text" name = "name" placeholder = "Enter your name" required>
+                <input type="email" name = "email" placeholder = "Enter Email Address" required>
+                <input type="text" name = "subject" placeholder = "Enter your subject" required>
+                <textarea rows = "8" name = "message" placeholder="Message" required></textarea>
+                <button type = "submit" class = "abt-btn red-btn">Send Message</button>
+            </form>
         </div>
     </div>
 </section>
+
+
 <section class="footer">
     <h4>About Us</h4>
     <p>We are a group of Saratoga High School students who wish to branch out and support the community. <br> We hope that our message will be sent and recieved to people beyond our school.</p>
@@ -80,6 +72,7 @@
     </div>
 <p> <i class = "fa fa-copyright"></i> 2023 TogaTutoring. All rights reserved</p>
 </section>
+
 <script src ="main.js?version=6"></script>
 </body>
 

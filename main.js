@@ -7,3 +7,4 @@ function showMenu(){
 function closeMenu(){
     navLinks.style.right = "-200px";
 }
+
