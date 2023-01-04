@@ -5,7 +5,7 @@
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 75vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background1.jpg);
     background-position: center;
@@ -315,14 +315,23 @@ h3{
 }
 
 .red-btn{
-    border: 1px solid #FF0000;
+    border: 3px solid #FF0000;
     background: transparent;
     color:#FF0000;
 }
 .red-btn:hover{
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
+.big-btn{
+    border: 3px solid #fff;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: #777;
+}
+.big-btn:hover{
+    color: rgb(255, 255, 255);
+}
 /*------contact us page -------*/
 
 .contact-us{
@@ -384,4 +393,22 @@ h3{
 
 .team-col p{
     padding:0 0 0;
+}
+
+
+/*-----------APPLY--------*/
+.apply{
+    width:80%;
+    margin: auto;
+}
+.apply h1{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 60px;
+}
+.apply-col h1{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 50px;
+    color:rgb(85, 83, 83)
 }
