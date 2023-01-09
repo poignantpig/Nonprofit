@@ -4,7 +4,7 @@ $visitor_email; = $_POST['email'];
 $subject; = $_POST['subject'];
 $message; = $_POST['message'];
 
-$email_from = 'email';
+$email_from = 'contact@togatutoring.com';
 
 $email_subject = 'New Form Submission';
 

@@ -6,11 +6,12 @@
     <link rel="stylesheet" href = "style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 
 </head>
 <body>
+
 <section class = "subheader">
     <nav>
         <a href="index.html"><img src="images/logo.png"></a>
@@ -22,6 +23,7 @@
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="team.html">TEAM</a></li>
                 <li><a href="apply.html">APPLY</a></li>
+                    
              </ul>
        </div>
        <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -34,23 +36,17 @@
 <section class="contact-us">
     <div class="row">
         <div class="contact-col">
-            <div>
-                <i class = "fa fa-phone"></i>
-                    <span>
-                        <h5>phone</h5>
-                        <p>Leave voicemail if not there</p>
-                    </span>
-                
-                </div>
+            <h2>Contact Info</h2>
                 <div>
                 <i class = "fa fa-envelope-o"></i>
                     <span>
-                        <h5>email</h5>
-                        <p>Email us for any questions, </p>
+                        <h4>contact@togatutoring.org</h4>
+                        <p>Email us for any questions </p>
                     </span>
             </div>
         </div>
         <div class="contact-col">
+            <h3>Send us a Message</h3>
             <form action="formhandler.php" method = "post">
                 <input type="text" name = "name" placeholder = "Enter your name" required>
                 <input type="email" name = "email" placeholder = "Enter Email Address" required>
@@ -67,12 +63,14 @@
     <h4>About Us</h4>
     <p>We are a group of Saratoga High School students who wish to branch out and support the community. <br> We hope that our message will be sent and recieved to people beyond our school.</p>
     <div class="icons">
-        <i class = "fa fa-facebook"></i>
-        <i class = "fa fa-twitter"></i>
-        <i class = "fa fa-instagram"></i>
+        <a href=""><i class = "fa fa-facebook"></i></a>
+        <a href=""><i class = "fa fa-twitter"></i></a>
+        <a href=""><i class = "fa fa-instagram"></i></a>
     </div>
 <p> <i class = "fa fa-copyright"></i> 2023 TogaTutoring. All rights reserved</p>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js" integrity="sha512-j0ThLeHF8KI1DZjV/vAJ0CKkDAMAsZbFA1KarA2jIfzAmXn3di3krSq9LJrv/gBVsUnouKqS/agIoQpxj/3Hkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src ="main.js?version=6"></script>
 </body>
